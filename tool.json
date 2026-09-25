@@ -1,0 +1,232 @@
+{
+  "tool": {
+    "id": "criterios-acr-eular-artrite-reumatoide",
+    "title": "Critérios ACR/EULAR 2010 para artrite reumatoide",
+    "short": "Classificação de artrite reumatoide",
+    "desc": "Aplique os critérios de classificação ACR/EULAR 2010 para artrite reumatoide: articulações, sorologia, provas de fase aguda e duração (≥ 6 de 10 pontos).",
+    "lead": "Classifica como artrite reumatoide definida o paciente com sinovite clínica em ao menos uma articulação, sem outro diagnóstico que a explique.",
+    "spec": [
+      "reumatologia",
+      "clinica-medica"
+    ],
+    "tier": 1,
+    "fields": [
+      [
+        "artic",
+        "Acometimento articular (edema ou dor)",
+        "sel",
+        {
+          "opts": {
+            "0": "1 grande articulação",
+            "1": "2 a 10 grandes articulações",
+            "2": "1 a 3 pequenas articulações (com ou sem grandes)",
+            "3": "4 a 10 pequenas articulações (com ou sem grandes)",
+            "5": "&gt; 10 articulações (ao menos 1 pequena)"
+          }
+        }
+      ],
+      [
+        "soro",
+        "Sorologia (fator reumatoide e anti-CCP)",
+        "sel",
+        {
+          "opts": {
+            "0": "Ambos negativos",
+            "2": "Algum positivo em título baixo (até 3× o limite superior)",
+            "3": "Algum positivo em título alto (&gt; 3× o limite superior)"
+          }
+        }
+      ],
+      [
+        "fase",
+        "Provas de fase aguda (PCR e VHS)",
+        "radio",
+        {
+          "opts": {
+            "0": "Ambas normais",
+            "1": "PCR ou VHS alterada"
+          }
+        }
+      ],
+      [
+        "duracao",
+        "Duração dos sintomas",
+        "radio",
+        {
+          "opts": {
+            "0": "&lt; 6 semanas",
+            "1": "≥ 6 semanas"
+          }
+        }
+      ]
+    ],
+    "score": {
+      "label": "ACR/EULAR 2010",
+      "unit": "de 10",
+      "bands": [
+        [
+          0,
+          "low",
+          "Não preenche os critérios de classificação (&lt; 6 pontos)",
+          "Não exclui artrite reumatoide: reavalie ao longo do tempo."
+        ],
+        [
+          6,
+          "high",
+          "Classifica como artrite reumatoide definida (≥ 6 pontos)"
+        ]
+      ]
+    },
+    "formula": "<p>Soma dos quatro domínios (máximo 10): articulações (0 a 5), sorologia (0 a 3), provas de fase aguda (0 a 1) e duração dos sintomas (0 a 1). Escore ≥ 6 = artrite reumatoide definida.</p><p>Grandes articulações: ombros, cotovelos, quadris, joelhos e tornozelos. Pequenas: metacarpofalângicas, interfalângicas proximais, 2ª a 5ª metatarsofalângicas, interfalângica do polegar e punhos.</p>",
+    "table": [
+      [
+        "Domínio",
+        "Pontos"
+      ],
+      [
+        "Articulações",
+        "0 a 5"
+      ],
+      [
+        "Sorologia (FR e anti-CCP)",
+        "0 a 3"
+      ],
+      [
+        "PCR/VHS",
+        "0 a 1"
+      ],
+      [
+        "Duração ≥ 6 semanas",
+        "0 a 1"
+      ],
+      [
+        "Classificação de AR",
+        "≥ 6 de 10"
+      ]
+    ],
+    "table_note": "Também classifica como AR, sem somar pontos, quem tem erosões típicas de AR na radiografia ou doença de longa data que já preencheu os critérios.",
+    "tips": [
+      "Só aplique a quem tem sinovite clínica (edema) em ao menos uma articulação sem explicação melhor (gota, lúpus, artrite psoriásica, osteoartrite).",
+      "Interfalângicas distais, 1ª metatarsofalângica e 1ª carpometacarpal são excluídas da contagem: são típicas de osteoartrite.",
+      "Critérios de classificação servem para estudos: um paciente com &lt; 6 pontos pode ter AR inicial e merecer tratamento.",
+      "Ultrassom ou ressonância podem ser usados para confirmar sinovite na contagem de articulações."
+    ],
+    "sources": [
+      [
+        "Aletaha D et al. 2010 Rheumatoid arthritis classification criteria: an American College of Rheumatology/European League Against Rheumatism collaborative initiative. Arthritis Rheum, 2010.",
+        "https://doi.org/10.1002/art.27584"
+      ]
+    ],
+    "cases": [
+      [
+        "6 pequenas articulações, anti-CCP alto, PCR alta, 3 meses: 8 pontos",
+        {
+          "artic": "3",
+          "soro": "3",
+          "fase": "1",
+          "duracao": "1"
+        },
+        {
+          "score": 8,
+          "level": "high"
+        }
+      ],
+      [
+        "12 articulações, sorologia negativa, PCR alta, 4 semanas: 6 pontos (limite)",
+        {
+          "artic": "5",
+          "soro": "0",
+          "fase": "1",
+          "duracao": "0"
+        },
+        {
+          "score": 6,
+          "level": "high"
+        }
+      ],
+      [
+        "2 pequenas articulações, FR baixo, provas normais, 2 meses: 5 pontos",
+        {
+          "artic": "2",
+          "soro": "2",
+          "fase": "0",
+          "duracao": "1"
+        },
+        {
+          "score": 5,
+          "level": "low"
+        }
+      ]
+    ],
+    "batch": "clinica",
+    "kind": "Escore",
+    "config": {
+      "unit": "de 10",
+      "label": "ACR/EULAR 2010",
+      "fields": [
+        [
+          "artic",
+          "sel",
+          0
+        ],
+        [
+          "soro",
+          "sel",
+          0
+        ],
+        [
+          "fase",
+          "radio",
+          0
+        ],
+        [
+          "duracao",
+          "radio",
+          0
+        ]
+      ],
+      "bands": [
+        [
+          0,
+          "low",
+          "Não preenche os critérios de classificação (&lt; 6 pontos)",
+          "Não exclui artrite reumatoide: reavalie ao longo do tempo."
+        ],
+        [
+          6,
+          "high",
+          "Classifica como artrite reumatoide definida (≥ 6 pontos)"
+        ]
+      ]
+    },
+    "areaId": "clinica",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/clinica.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 3,
+      "passed": 3,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/clinica.php",
+    "sha256": "9dc60f9c51e1db27ff495c69b24d4422a87e42b8c9bc63551aac6a9bc704b2e0",
+    "bytes": 101245
+  },
+  "clinicalValidation": "not-performed"
+}

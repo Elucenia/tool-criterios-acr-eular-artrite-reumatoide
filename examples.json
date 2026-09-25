@@ -1,0 +1,62 @@
+[
+  {
+    "label": "6 pequenas articulações, anti-CCP alto, PCR alta, 3 meses: 8 pontos",
+    "input": {
+      "artic": "3",
+      "soro": "3",
+      "fase": "1",
+      "duracao": "1"
+    },
+    "expected": {
+      "score": 8,
+      "level": "high"
+    },
+    "originalInput": {
+      "artic": "3",
+      "soro": "3",
+      "fase": "1",
+      "duracao": "1"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "12 articulações, sorologia negativa, PCR alta, 4 semanas: 6 pontos (limite)",
+    "input": {
+      "artic": "5",
+      "soro": "0",
+      "fase": "1",
+      "duracao": "0"
+    },
+    "expected": {
+      "score": 6,
+      "level": "high"
+    },
+    "originalInput": {
+      "artic": "5",
+      "soro": "0",
+      "fase": "1",
+      "duracao": "0"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "2 pequenas articulações, FR baixo, provas normais, 2 meses: 5 pontos",
+    "input": {
+      "artic": "2",
+      "soro": "2",
+      "fase": "0",
+      "duracao": "1"
+    },
+    "expected": {
+      "score": 5,
+      "level": "low"
+    },
+    "originalInput": {
+      "artic": "2",
+      "soro": "2",
+      "fase": "0",
+      "duracao": "1"
+    },
+    "expandedZeroOptions": []
+  }
+]
