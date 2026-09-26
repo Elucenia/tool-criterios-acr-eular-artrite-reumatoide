@@ -1,7 +1,7 @@
 {
   "name": "@elucenia/tool-criterios-acr-eular-artrite-reumatoide",
   "version": "0.1.0",
-  "description": "Critérios ACR/EULAR 2010 para artrite reumatoide · Elucenia: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
+  "description": "Critérios ACR/EULAR 2010 para artrite reumatoide · ELUCENIA: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
   "keywords": [
     "elucenia",
     "medical-calculator",
