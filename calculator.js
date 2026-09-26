@@ -1,9 +1,11 @@
-/* ELUCENIA standalone integration. Source package metadata and rights: README.md. */
+/* tool-criterios-acr-eular-artrite-reumatoide · Elucenia · https://github.com/Elucenia/tool-criterios-acr-eular-artrite-reumatoide
+   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+   Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"criterios-acr-eular-artrite-reumatoide","title":"Critérios ACR/EULAR 2010 para artrite reumatoide","fields":[["artic","Acometimento articular (edema ou dor)","sel",{"opts":{"0":"1 grande articulação","1":"2 a 10 grandes articulações","2":"1 a 3 pequenas articulações (com ou sem grandes)","3":"4 a 10 pequenas articulações (com ou sem grandes)","5":"&gt; 10 articulações (ao menos 1 pequena)"}}],["soro","Sorologia (fator reumatoide e anti-CCP)","sel",{"opts":{"0":"Ambos negativos","2":"Algum positivo em título baixo (até 3× o limite superior)","3":"Algum positivo em título alto (&gt; 3× o limite superior)"}}],["fase","Provas de fase aguda (PCR e VHS)","radio",{"opts":{"0":"Ambas normais","1":"PCR ou VHS alterada"}}],["duracao","Duração dos sintomas","radio",{"opts":{"0":"&lt; 6 semanas","1":"≥ 6 semanas"}}]],"config":{"unit":"de 10","label":"ACR/EULAR 2010","fields":[["artic","sel",0],["soro","sel",0],["fase","radio",0],["duracao","radio",0]],"bands":[[0,"low","Não preenche os critérios de classificação (&lt; 6 pontos)","Não exclui artrite reumatoide: reavalie ao longo do tempo."],[6,"high","Classifica como artrite reumatoide definida (≥ 6 pontos)"]]},"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
