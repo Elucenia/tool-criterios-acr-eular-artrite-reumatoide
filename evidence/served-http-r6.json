@@ -1,0 +1,629 @@
+{
+  "schema": "elucenia-native-tool-actual-r6-local-HTTP-subset-r5",
+  "id": "criterios-acr-eular-artrite-reumatoide",
+  "sourceReceipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+    "bytes": 7105396,
+    "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+  },
+  "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+  "checker": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa",
+    "bytes": 20735
+  },
+  "health": {
+    "url": "http://127.0.0.1:3067/api/health",
+    "startedAt": "2026-10-05T17:35:43.039Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json",
+      "retryAfter": null,
+      "cacheControl": "no-store",
+      "nosniff": "nosniff"
+    },
+    "body": {
+      "status": "ok",
+      "application": "ELUCENIA",
+      "framework": "Next.js",
+      "version": "1.0.0"
+    },
+    "responseSha256": "65f95645e7826371eb2d9d3f96e0fed52ea4b88c77203f0cf2511769e57cd108",
+    "bytes": 80,
+    "elapsedMs": 27.345699999999994
+  },
+  "identity": {
+    "url": "http://127.0.0.1:3067/_next/data/jN-2wbRrarMjYPwdPnRHh/en/tools.json",
+    "startedAt": "2026-10-05T17:35:43.068Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json; charset=utf-8",
+      "retryAfter": null,
+      "cacheControl": "s-maxage=31536000",
+      "nosniff": "nosniff"
+    },
+    "responseSha256": "404601e2c283a588a2f41af4feb5113d1993f76cc22f73a7b8ef4f5d17a82fa8",
+    "bytes": 103853,
+    "elapsedMs": 14.542600000000007,
+    "semanticMatchWithCompiledCatalog": true
+  },
+  "sourceCalculator": {
+    "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/criterios-acr-eular-artrite-reumatoide/calculator.js",
+    "sha256": "427ee6e60a090985744bc000cd1ae0c651a3adcfa10c1c2b0389c7281408458b",
+    "bytes": 5169
+  },
+  "sourceCalculatorMatchesCurrentCandidate": true,
+  "toolStatus": {
+    "cases": 3,
+    "replayed": 3,
+    "passed": 3,
+    "failed": 0,
+    "status": "passed"
+  },
+  "cases": [
+    {
+      "id": "criterios-acr-eular-artrite-reumatoide",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "6 pequenas articulações, anti-CCP alto, PCR alta, 3 meses: 8 pontos",
+      "originalInput": {
+        "artic": "3",
+        "soro": "3",
+        "fase": "1",
+        "duracao": "1"
+      },
+      "input": {
+        "artic": "3",
+        "soro": "3",
+        "fase": "1",
+        "duracao": "1"
+      },
+      "amendments": [],
+      "expected": {
+        "score": 8,
+        "level": "high"
+      },
+      "recordedResult": {
+        "main": [
+          "8",
+          "de 10"
+        ],
+        "label": "ACR/EULAR 2010",
+        "raw": {
+          "score": 8
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/criterios-acr-eular-artrite-reumatoide/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "artic": "3",
+            "soro": "3",
+            "fase": "1",
+            "duracao": "1"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/criterios-acr-eular-artrite-reumatoide/calculate",
+          "startedAt": "2026-10-05T17:36:23.419Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "criterios-acr-eular-artrite-reumatoide",
+              "main": [
+                "8",
+                "de 10"
+              ],
+              "label": "ACR/EULAR 2010",
+              "raw": {
+                "score": 8
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "208bbb6f46daf688ab20961d4cb02f153c0e42f4911a83ab1af5e346568811de",
+          "bytes": 159,
+          "elapsedMs": 4.705199999996694
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/criterios-acr-eular-artrite-reumatoide/calculate",
+        "startedAt": "2026-10-05T17:36:23.419Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "criterios-acr-eular-artrite-reumatoide",
+            "main": [
+              "8",
+              "de 10"
+            ],
+            "label": "ACR/EULAR 2010",
+            "raw": {
+              "score": 8
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "208bbb6f46daf688ab20961d4cb02f153c0e42f4911a83ab1af5e346568811de",
+        "bytes": 159,
+        "elapsedMs": 4.705199999996694
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 8,
+            "obtained": 8,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 8,
+            "obtained": 8,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "8",
+            "obtained": "8",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "de 10",
+            "obtained": "de 10",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "criterios-acr-eular-artrite-reumatoide",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "12 articulações, sorologia negativa, PCR alta, 4 semanas: 6 pontos (limite)",
+      "originalInput": {
+        "artic": "5",
+        "soro": "0",
+        "fase": "1",
+        "duracao": "0"
+      },
+      "input": {
+        "artic": "5",
+        "soro": "0",
+        "fase": "1",
+        "duracao": "0"
+      },
+      "amendments": [],
+      "expected": {
+        "score": 6,
+        "level": "high"
+      },
+      "recordedResult": {
+        "main": [
+          "6",
+          "de 10"
+        ],
+        "label": "ACR/EULAR 2010",
+        "raw": {
+          "score": 6
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/criterios-acr-eular-artrite-reumatoide/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "artic": "5",
+            "soro": "0",
+            "fase": "1",
+            "duracao": "0"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/criterios-acr-eular-artrite-reumatoide/calculate",
+          "startedAt": "2026-10-05T17:36:23.730Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "criterios-acr-eular-artrite-reumatoide",
+              "main": [
+                "6",
+                "de 10"
+              ],
+              "label": "ACR/EULAR 2010",
+              "raw": {
+                "score": 6
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "4eb9c7163ac578ed90acf2def368631ae9a58dfa57d9ee1d70f1ef124b368dc5",
+          "bytes": 159,
+          "elapsedMs": 4.076500000002852
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/criterios-acr-eular-artrite-reumatoide/calculate",
+        "startedAt": "2026-10-05T17:36:23.730Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "criterios-acr-eular-artrite-reumatoide",
+            "main": [
+              "6",
+              "de 10"
+            ],
+            "label": "ACR/EULAR 2010",
+            "raw": {
+              "score": 6
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "4eb9c7163ac578ed90acf2def368631ae9a58dfa57d9ee1d70f1ef124b368dc5",
+        "bytes": 159,
+        "elapsedMs": 4.076500000002852
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 6,
+            "obtained": 6,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 6,
+            "obtained": 6,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "6",
+            "obtained": "6",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "de 10",
+            "obtained": "de 10",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "criterios-acr-eular-artrite-reumatoide",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "2 pequenas articulações, FR baixo, provas normais, 2 meses: 5 pontos",
+      "originalInput": {
+        "artic": "2",
+        "soro": "2",
+        "fase": "0",
+        "duracao": "1"
+      },
+      "input": {
+        "artic": "2",
+        "soro": "2",
+        "fase": "0",
+        "duracao": "1"
+      },
+      "amendments": [],
+      "expected": {
+        "score": 5,
+        "level": "low"
+      },
+      "recordedResult": {
+        "main": [
+          "5",
+          "de 10"
+        ],
+        "label": "ACR/EULAR 2010",
+        "raw": {
+          "score": 5
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/criterios-acr-eular-artrite-reumatoide/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "artic": "2",
+            "soro": "2",
+            "fase": "0",
+            "duracao": "1"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/criterios-acr-eular-artrite-reumatoide/calculate",
+          "startedAt": "2026-10-05T17:36:24.041Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "criterios-acr-eular-artrite-reumatoide",
+              "main": [
+                "5",
+                "de 10"
+              ],
+              "label": "ACR/EULAR 2010",
+              "raw": {
+                "score": 5
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "e61f5406c546bf9a092c33405a9dbbeeda71b5b71335fe7867c707f35bbb2c68",
+          "bytes": 159,
+          "elapsedMs": 4.438300000001618
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/criterios-acr-eular-artrite-reumatoide/calculate",
+        "startedAt": "2026-10-05T17:36:24.041Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "criterios-acr-eular-artrite-reumatoide",
+            "main": [
+              "5",
+              "de 10"
+            ],
+            "label": "ACR/EULAR 2010",
+            "raw": {
+              "score": 5
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "e61f5406c546bf9a092c33405a9dbbeeda71b5b71335fe7867c707f35bbb2c68",
+        "bytes": 159,
+        "elapsedMs": 4.438300000001618
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 5,
+            "obtained": 5,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 5,
+            "obtained": 5,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "5",
+            "obtained": "5",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "de 10",
+            "obtained": "de 10",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "predictProstateHasSeparateFullCurveOracleReplay": true,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r6 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "newIndependentOracle": false,
+  "actualBrowserJourney": false,
+  "hostingerDeploymentVerified": false
+}
