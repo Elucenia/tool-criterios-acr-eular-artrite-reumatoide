@@ -1,0 +1,202 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field artic",
+    "input": {
+      "soro": "3",
+      "fase": "1",
+      "duracao": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "artic"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field artic",
+    "input": {
+      "artic": "",
+      "soro": "3",
+      "fase": "1",
+      "duracao": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "artic"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option artic",
+    "input": {
+      "artic": "__ELUCENIA_INVALID_OPTION__",
+      "soro": "3",
+      "fase": "1",
+      "duracao": "1"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "artic"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field soro",
+    "input": {
+      "artic": "3",
+      "fase": "1",
+      "duracao": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "soro"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field soro",
+    "input": {
+      "artic": "3",
+      "soro": "",
+      "fase": "1",
+      "duracao": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "soro"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option soro",
+    "input": {
+      "artic": "3",
+      "soro": "__ELUCENIA_INVALID_OPTION__",
+      "fase": "1",
+      "duracao": "1"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "soro"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field fase",
+    "input": {
+      "artic": "3",
+      "soro": "3",
+      "duracao": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "fase"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field fase",
+    "input": {
+      "artic": "3",
+      "soro": "3",
+      "fase": "",
+      "duracao": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "fase"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option fase",
+    "input": {
+      "artic": "3",
+      "soro": "3",
+      "fase": "__ELUCENIA_INVALID_OPTION__",
+      "duracao": "1"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "fase"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field duracao",
+    "input": {
+      "artic": "3",
+      "soro": "3",
+      "fase": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "duracao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field duracao",
+    "input": {
+      "artic": "3",
+      "soro": "3",
+      "fase": "1",
+      "duracao": ""
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "duracao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option duracao",
+    "input": {
+      "artic": "3",
+      "soro": "3",
+      "fase": "1",
+      "duracao": "__ELUCENIA_INVALID_OPTION__"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "duracao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

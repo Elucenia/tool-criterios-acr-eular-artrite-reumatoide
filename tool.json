@@ -5,11 +5,11 @@
     "short": "Classificação de artrite reumatoide",
     "desc": "Aplique os critérios de classificação ACR/EULAR 2010 para artrite reumatoide: articulações, sorologia, provas de fase aguda e duração (≥ 6 de 10 pontos).",
     "lead": "Classifica como artrite reumatoide definida o paciente com sinovite clínica em ao menos uma articulação, sem outro diagnóstico que a explique.",
+    "kind": "Escore",
     "spec": [
       "reumatologia",
       "clinica-medica"
     ],
-    "tier": 1,
     "fields": [
       [
         "artic",
@@ -60,57 +60,7 @@
         }
       ]
     ],
-    "score": {
-      "label": "ACR/EULAR 2010",
-      "unit": "de 10",
-      "bands": [
-        [
-          0,
-          "low",
-          "Não preenche os critérios de classificação (&lt; 6 pontos)",
-          "Não exclui artrite reumatoide: reavalie ao longo do tempo."
-        ],
-        [
-          6,
-          "high",
-          "Classifica como artrite reumatoide definida (≥ 6 pontos)"
-        ]
-      ]
-    },
     "formula": "<p>Soma dos quatro domínios (máximo 10): articulações (0 a 5), sorologia (0 a 3), provas de fase aguda (0 a 1) e duração dos sintomas (0 a 1). Escore ≥ 6 = artrite reumatoide definida.</p><p>Grandes articulações: ombros, cotovelos, quadris, joelhos e tornozelos. Pequenas: metacarpofalângicas, interfalângicas proximais, 2ª a 5ª metatarsofalângicas, interfalângica do polegar e punhos.</p>",
-    "table": [
-      [
-        "Domínio",
-        "Pontos"
-      ],
-      [
-        "Articulações",
-        "0 a 5"
-      ],
-      [
-        "Sorologia (FR e anti-CCP)",
-        "0 a 3"
-      ],
-      [
-        "PCR/VHS",
-        "0 a 1"
-      ],
-      [
-        "Duração ≥ 6 semanas",
-        "0 a 1"
-      ],
-      [
-        "Classificação de AR",
-        "≥ 6 de 10"
-      ]
-    ],
-    "table_note": "Também classifica como AR, sem somar pontos, quem tem erosões típicas de AR na radiografia ou doença de longa data que já preencheu os critérios.",
-    "tips": [
-      "Só aplique a quem tem sinovite clínica (edema) em ao menos uma articulação sem explicação melhor (gota, lúpus, artrite psoriásica, osteoartrite).",
-      "Interfalângicas distais, 1ª metatarsofalângica e 1ª carpometacarpal são excluídas da contagem: são típicas de osteoartrite.",
-      "Critérios de classificação servem para estudos: um paciente com &lt; 6 pontos pode ter AR inicial e merecer tratamento.",
-      "Ultrassom ou ressonância podem ser usados para confirmar sinovite na contagem de articulações."
-    ],
     "sources": [
       [
         "Aletaha D et al. 2010 Rheumatoid arthritis classification criteria: an American College of Rheumatology/European League Against Rheumatism collaborative initiative. Arthritis Rheum, 2010.",
@@ -158,47 +108,6 @@
         }
       ]
     ],
-    "kind": "Escore",
-    "config": {
-      "unit": "de 10",
-      "label": "ACR/EULAR 2010",
-      "fields": [
-        [
-          "artic",
-          "sel",
-          0
-        ],
-        [
-          "soro",
-          "sel",
-          0
-        ],
-        [
-          "fase",
-          "radio",
-          0
-        ],
-        [
-          "duracao",
-          "radio",
-          0
-        ]
-      ],
-      "bands": [
-        [
-          0,
-          "low",
-          "Não preenche os critérios de classificação (&lt; 6 pontos)",
-          "Não exclui artrite reumatoide: reavalie ao longo do tempo."
-        ],
-        [
-          6,
-          "high",
-          "Classifica como artrite reumatoide definida (≥ 6 pontos)"
-        ]
-      ]
-    },
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -207,17 +116,447 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T19:08:25.461Z",
+      "total": 60,
+      "passed": 60,
+      "sourceRowCount": 60,
+      "uniqueApiInputCount": 60,
+      "sourceContextCount": 60,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "8cfb124f596dbaac55d21cd3810ac43e4ab03a2a7da9dba793834083eab4e3e2",
+        "total": 60,
+        "bankRowCount": 60,
+        "uniqueApiInputCount": 60,
+        "sourceContextCount": 60,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/ra-uas-independent-expectations-final27.json",
+            "sha256": "ea0b90049060bd52d58841a62e7b37b93e00d17fc7de6c4e9997e9c5147d3e91"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/ra-uas-source-comparison-final27.json",
+          "sha256": "78ed0d7465048eb0179f323b1ea4421cfb78afa4bf10d8634ed3a76a04a04fb2"
+        },
+        "packagingRequirement": "After source27 composition, rebind exact calculator SHA for documented text-only edits and replay the full scope before fresh packaging."
+      },
+      "inputIdentity": {
+        "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+        "sourceRows": 60,
+        "uniqueApiInputs": 60,
+        "duplicateRows": 0,
+        "expectationAudit": {
+          "file": "reports/review-20261003/ra-uas-independent-expectations-final27.json",
+          "sha256": "ea0b90049060bd52d58841a62e7b37b93e00d17fc7de6c4e9997e9c5147d3e91"
+        }
+      },
+      "scope": "Exact sum of previously assigned source component points; clinical rubrics, eligibility, observation, probability, diagnosis, classification and treatment are excluded. See named source sections and independent source findings.",
+      "sources": [
+        {
+          "id": "criterios-acr-eular-artrite-reumatoide",
+          "declaredEdition": "ACR/EULAR 2010:4 domínios, total 0–10, corte≥6; requer contexto e exclusões",
+          "readRecords": [
+            {
+              "id": "criterios-acr-eular-artrite-reumatoide",
+              "url": "https://www.rap-el.com.au/documents/aletaha-et-al-2010.pdf",
+              "file": "ra-acr-eular-2010-original-final27.pdf",
+              "sha256": "d6f78173030ad5ecdcf8ae05e29776a1343f922c18c3d7654b8efa03053065d8",
+              "edition": "Aletaha et al, original Arthritis & Rheumatism62(9),2010,DOI10.1002/art.27584",
+              "directlyRead": [
+                {
+                  "page": 6,
+                  "printedPage": 2574,
+                  "section": "Table3 and all table footnotes",
+                  "image": "ra-acr-eular-2010-original-final27-p6.png",
+                  "sha256": "a760803ba8fc6ef6dd84da5b23a6a446eab34e106a6a7eb9bd876635b888c770"
+                },
+                {
+                  "page": 9,
+                  "printedPage": 2577,
+                  "section": "Joint/serologic/acute-phase/duration glossary and eligible population discussion",
+                  "image": "ra-acr-eular-2010-original-final27-p9.png",
+                  "sha256": "f3765e70498c4740602e82ce5b3f7f93e8f9a8f7ad93fb4493114f8a4a11f379"
+                }
+              ],
+              "independentEquation": "Assigned domain points A in {0,1,2,3,5},B in {0,2,3},C,D in {0,1}; add four integers; maximum10. Sourceclassificationthreshold6 is recorded but not approved by this point-sum bank.",
+              "sourceContext": [
+                "Eligibility requires clinically swollen synovitis in at leastone joint and no better explanation. Classification criteria are not automatic clinical diagnosis.",
+                "Smalljoint exclusions DIP,firstCMC,firstMTP; highest applicable category. Low serology >ULN and <=3ULN; high >3ULN. At leastone serology andone acute-phase measure for classification.",
+                "Duration sourceboundary <6 vs>=6weeks. Missing historical symptomatic joints not currently involved are excluded."
+              ],
+              "unapproved": [
+                "Eligibility/exclusions and selection of highest domain category not tested by already-assigned codes.",
+                "Do not label >=6 as diagnostic approval.",
+                "OfficialBMJ original/correction1892.1 web fetch403 retained; correction says missingTable3header/scores in companionARDedition. This bank uses completeTable3 in originalWileypublishedmirror, not a phase2 preliminary weighting."
+              ]
+            }
+          ],
+          "sourceReview": {
+            "file": "reports/review-20261003/ra-uas-primary-review-final27.json",
+            "sha256": "8c23cba031ce442e829af7b1860aafff2ba55645015b87e6fa2131dec306ced3"
+          },
+          "sourceComponent": "Exact sum of previously assigned source component points; clinical rubrics, eligibility, observation, probability, diagnosis, classification and treatment are excluded. See named source sections and independent source findings."
+        }
+      ],
+      "evidencePath": "reports/review-20261003/ra-uas-source-comparison-final27.json",
+      "evidenceSha256": "78ed0d7465048eb0179f323b1ea4421cfb78afa4bf10d8634ed3a76a04a04fb2",
+      "independentPeer": {
+        "status": "passed",
+        "scope": "Independent reading of named source sections and own expectation derivation/execution. Bank/metadata packaging needs a separate technical peer. No human clinical, translation or rights approval.",
+        "peer": {
+          "file": "reports/review-20261003/ra-uas-source-independent-review-western-final27.json",
+          "sha256": "1965d413e9b3549c1af4f5de65ecba43f3cd43a3027995361fbccb5e4cfeadcb"
+        },
+        "peerScope": "Independent named primary-table reading plus own Python integer expectations frozen before implementation import/root expected values. Root-selected INPUTS only; three Node and same-source browser-compatible VM mirrors. Total-only scope, not clinical assessment/classification or instrument approval.",
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      },
+      "metadataPackagingPeer": {
+        "status": "passed",
+        "scope": "Bounded independent review of the original source bank and its metadata/helper. Prospective code rebinding is separately re-executed below and requires the final composition peer; no human approval inferred.",
+        "peer": {
+          "file": "reports/review-20261003/nine-source-bank-metadata-independent-review-western-final27.json",
+          "sha256": "e762e0f425c9251081547c86e4f1b80b86839a21223fd47712ebde9b1335a978"
+        },
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      },
+      "actualAdapterExecutions": 180,
+      "actualVmExecutions": 180,
+      "implementations": [
+        {
+          "file": "apps/website/private/tool-code/criterios-acr-eular-artrite-reumatoide/calculator.js",
+          "sha256": "427ee6e60a090985744bc000cd1ae0c651a3adcfa10c1c2b0389c7281408458b"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/criterios-acr-eular-artrite-reumatoide/calculator.js",
+          "sha256": "427ee6e60a090985744bc000cd1ae0c651a3adcfa10c1c2b0389c7281408458b"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/criterios-acr-eular-artrite-reumatoide/calculator.js",
+          "sha256": "427ee6e60a090985744bc000cd1ae0c651a3adcfa10c1c2b0389c7281408458b"
+        }
+      ],
+      "qualifications": [
+        "Exact sum of previously assigned source component points; clinical rubrics, eligibility, observation, probability, diagnosis, classification and treatment are excluded. See named source sections and independent source findings.",
+        "Original source conflicts, rights conditions, population and clinical limitations remain in the hashed primary review and peer. They are not marked approved.",
+        "Four inline records are a subset of the complete hashed downloadable bank. Every862historicalfixture and method field/formula/version is unchanged by this evidence-only candidate."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "prospectiveSource27Bindings": [
+        {
+          "file": "apps/website/private/tool-code/criterios-acr-eular-artrite-reumatoide/calculator.js",
+          "sha256": "427ee6e60a090985744bc000cd1ae0c651a3adcfa10c1c2b0389c7281408458b"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/criterios-acr-eular-artrite-reumatoide/calculator.js",
+          "sha256": "427ee6e60a090985744bc000cd1ae0c651a3adcfa10c1c2b0389c7281408458b"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/criterios-acr-eular-artrite-reumatoide/calculator.js",
+          "sha256": "427ee6e60a090985744bc000cd1ae0c651a3adcfa10c1c2b0389c7281408458b"
+        }
+      ],
+      "prospectiveSource27Replay": {
+        "file": "reports/review-20261003/source27-complete-bank-current-replay-root-r3.json",
+        "sha256": "44c601f27d3d5051a8d55a581381112b58df36c7c4b6cfd24ce1249b263d6a2b"
+      },
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "ACR/EULAR 2010:4 domínios, total 0–10, corte≥6; requer contexto e exclusões",
+    "implementationVersion": "criterios-acr-eular-artrite-reumatoide@native-2026-10-03+427ee6e60a09",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/20872595/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Soma dos quatro domínios (máximo 10): articulações (0 a 5), sorologia (0 a 3), provas de fase aguda (0 a 1) e duração dos sintomas (0 a 1). Escore ≥ 6 = artrite reumatoide definida. Grandes articulações: ombros, cotovelos, quadris, joelhos e tornozelos. Pequenas: metacarpofalângicas, interfalângicas proximais, 2ª a 5ª metatarsofalângicas, interfalângica do polegar e punhos.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "artic",
+            "label": "Acometimento articular (edema ou dor)",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "1 grande articulação",
+              "1": "2 a 10 grandes articulações",
+              "2": "1 a 3 pequenas articulações (com ou sem grandes)",
+              "3": "4 a 10 pequenas articulações (com ou sem grandes)",
+              "5": "&gt; 10 articulações (ao menos 1 pequena)"
+            }
+          },
+          {
+            "key": "soro",
+            "label": "Sorologia (fator reumatoide e anti-CCP)",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "Ambos negativos",
+              "2": "Algum positivo em título baixo (até 3× o limite superior)",
+              "3": "Algum positivo em título alto (&gt; 3× o limite superior)"
+            }
+          },
+          {
+            "key": "fase",
+            "label": "Provas de fase aguda (PCR e VHS)",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Ambas normais",
+              "1": "PCR ou VHS alterada"
+            }
+          },
+          {
+            "key": "duracao",
+            "label": "Duração dos sintomas",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "&lt; 6 semanas",
+              "1": "≥ 6 semanas"
+            }
+          }
+        ],
+        "hash": "a0f8d61e5f2644f5f7238f2650f773ff272abb8df696465a85fa90a39db22eee"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Aletaha D et al. 2010 Rheumatoid arthritis classification criteria: an American College of Rheumatology/European League Against Rheumatism collaborative initiative. Arthritis Rheum, 2010.",
+          "url": "https://doi.org/10.1002/art.27584",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "2010 Rheumatoid arthritis classification criteria: an American College of Rheumatology/European League Against Rheumatism collaborative initiative.",
+            "year": "2010",
+            "firstPublicationDate": "2010-09-01",
+            "doi": "10.1002/art.27584",
+            "pmid": "20872595",
+            "journal": "Arthritis and rheumatism",
+            "authors": "Aletaha D, Neogi T, Silman AJ, Funovits J, Felson DT, Bingham CO, Birnbaum NS, Burmester GR, Bykerk VP, Cohen MD, Combe B, Costenbader KH, Dougados M, Emery P, Ferraccioli G, Hazes JM, Hobbs K, Huizinga TW, Kavanaugh A, Kay J, Kvien TK, Laing T, Mease P, Ménard HA, Moreland LW, Naden RL, Pincus T, Smolen JS, Stanislawska-Biernat E, Symmons D, Tak PP, Upchurch KS, Vencovský J, Wolfe F, Hawker G."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/20872595/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "07440c3c5b53d04209138143279f65d05bfa20dd7a91fdcdba43cb556fa26224",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T19:08:25.461Z",
+        "total": 60,
+        "passed": 60,
+        "sourceRowCount": 60,
+        "uniqueApiInputCount": 60,
+        "sourceContextCount": 60,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "8cfb124f596dbaac55d21cd3810ac43e4ab03a2a7da9dba793834083eab4e3e2",
+          "total": 60,
+          "bankRowCount": 60,
+          "uniqueApiInputCount": 60,
+          "sourceContextCount": 60,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/ra-uas-independent-expectations-final27.json",
+              "sha256": "ea0b90049060bd52d58841a62e7b37b93e00d17fc7de6c4e9997e9c5147d3e91"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/ra-uas-source-comparison-final27.json",
+            "sha256": "78ed0d7465048eb0179f323b1ea4421cfb78afa4bf10d8634ed3a76a04a04fb2"
+          },
+          "packagingRequirement": "After source27 composition, rebind exact calculator SHA for documented text-only edits and replay the full scope before fresh packaging."
+        },
+        "inputIdentity": {
+          "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+          "sourceRows": 60,
+          "uniqueApiInputs": 60,
+          "duplicateRows": 0,
+          "expectationAudit": {
+            "file": "reports/review-20261003/ra-uas-independent-expectations-final27.json",
+            "sha256": "ea0b90049060bd52d58841a62e7b37b93e00d17fc7de6c4e9997e9c5147d3e91"
+          }
+        },
+        "scope": "Exact sum of previously assigned source component points; clinical rubrics, eligibility, observation, probability, diagnosis, classification and treatment are excluded. See named source sections and independent source findings.",
+        "sources": [
+          {
+            "id": "criterios-acr-eular-artrite-reumatoide",
+            "declaredEdition": "ACR/EULAR 2010:4 domínios, total 0–10, corte≥6; requer contexto e exclusões",
+            "readRecords": [
+              {
+                "id": "criterios-acr-eular-artrite-reumatoide",
+                "url": "https://www.rap-el.com.au/documents/aletaha-et-al-2010.pdf",
+                "file": "ra-acr-eular-2010-original-final27.pdf",
+                "sha256": "d6f78173030ad5ecdcf8ae05e29776a1343f922c18c3d7654b8efa03053065d8",
+                "edition": "Aletaha et al, original Arthritis & Rheumatism62(9),2010,DOI10.1002/art.27584",
+                "directlyRead": [
+                  {
+                    "page": 6,
+                    "printedPage": 2574,
+                    "section": "Table3 and all table footnotes",
+                    "image": "ra-acr-eular-2010-original-final27-p6.png",
+                    "sha256": "a760803ba8fc6ef6dd84da5b23a6a446eab34e106a6a7eb9bd876635b888c770"
+                  },
+                  {
+                    "page": 9,
+                    "printedPage": 2577,
+                    "section": "Joint/serologic/acute-phase/duration glossary and eligible population discussion",
+                    "image": "ra-acr-eular-2010-original-final27-p9.png",
+                    "sha256": "f3765e70498c4740602e82ce5b3f7f93e8f9a8f7ad93fb4493114f8a4a11f379"
+                  }
+                ],
+                "independentEquation": "Assigned domain points A in {0,1,2,3,5},B in {0,2,3},C,D in {0,1}; add four integers; maximum10. Sourceclassificationthreshold6 is recorded but not approved by this point-sum bank.",
+                "sourceContext": [
+                  "Eligibility requires clinically swollen synovitis in at leastone joint and no better explanation. Classification criteria are not automatic clinical diagnosis.",
+                  "Smalljoint exclusions DIP,firstCMC,firstMTP; highest applicable category. Low serology >ULN and <=3ULN; high >3ULN. At leastone serology andone acute-phase measure for classification.",
+                  "Duration sourceboundary <6 vs>=6weeks. Missing historical symptomatic joints not currently involved are excluded."
+                ],
+                "unapproved": [
+                  "Eligibility/exclusions and selection of highest domain category not tested by already-assigned codes.",
+                  "Do not label >=6 as diagnostic approval.",
+                  "OfficialBMJ original/correction1892.1 web fetch403 retained; correction says missingTable3header/scores in companionARDedition. This bank uses completeTable3 in originalWileypublishedmirror, not a phase2 preliminary weighting."
+                ]
+              }
+            ],
+            "sourceReview": {
+              "file": "reports/review-20261003/ra-uas-primary-review-final27.json",
+              "sha256": "8c23cba031ce442e829af7b1860aafff2ba55645015b87e6fa2131dec306ced3"
+            },
+            "sourceComponent": "Exact sum of previously assigned source component points; clinical rubrics, eligibility, observation, probability, diagnosis, classification and treatment are excluded. See named source sections and independent source findings."
+          }
+        ],
+        "evidencePath": "reports/review-20261003/ra-uas-source-comparison-final27.json",
+        "evidenceSha256": "78ed0d7465048eb0179f323b1ea4421cfb78afa4bf10d8634ed3a76a04a04fb2",
+        "independentPeer": {
+          "status": "passed",
+          "scope": "Independent reading of named source sections and own expectation derivation/execution. Bank/metadata packaging needs a separate technical peer. No human clinical, translation or rights approval.",
+          "peer": {
+            "file": "reports/review-20261003/ra-uas-source-independent-review-western-final27.json",
+            "sha256": "1965d413e9b3549c1af4f5de65ecba43f3cd43a3027995361fbccb5e4cfeadcb"
+          },
+          "peerScope": "Independent named primary-table reading plus own Python integer expectations frozen before implementation import/root expected values. Root-selected INPUTS only; three Node and same-source browser-compatible VM mirrors. Total-only scope, not clinical assessment/classification or instrument approval.",
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed"
+        },
+        "metadataPackagingPeer": {
+          "status": "passed",
+          "scope": "Bounded independent review of the original source bank and its metadata/helper. Prospective code rebinding is separately re-executed below and requires the final composition peer; no human approval inferred.",
+          "peer": {
+            "file": "reports/review-20261003/nine-source-bank-metadata-independent-review-western-final27.json",
+            "sha256": "e762e0f425c9251081547c86e4f1b80b86839a21223fd47712ebde9b1335a978"
+          },
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed"
+        },
+        "actualAdapterExecutions": 180,
+        "actualVmExecutions": 180,
+        "implementations": [
+          {
+            "file": "apps/website/private/tool-code/criterios-acr-eular-artrite-reumatoide/calculator.js",
+            "sha256": "427ee6e60a090985744bc000cd1ae0c651a3adcfa10c1c2b0389c7281408458b"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/criterios-acr-eular-artrite-reumatoide/calculator.js",
+            "sha256": "427ee6e60a090985744bc000cd1ae0c651a3adcfa10c1c2b0389c7281408458b"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/criterios-acr-eular-artrite-reumatoide/calculator.js",
+            "sha256": "427ee6e60a090985744bc000cd1ae0c651a3adcfa10c1c2b0389c7281408458b"
+          }
+        ],
+        "qualifications": [
+          "Exact sum of previously assigned source component points; clinical rubrics, eligibility, observation, probability, diagnosis, classification and treatment are excluded. See named source sections and independent source findings.",
+          "Original source conflicts, rights conditions, population and clinical limitations remain in the hashed primary review and peer. They are not marked approved.",
+          "Four inline records are a subset of the complete hashed downloadable bank. Every862historicalfixture and method field/formula/version is unchanged by this evidence-only candidate."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "prospectiveSource27Bindings": [
+          {
+            "file": "apps/website/private/tool-code/criterios-acr-eular-artrite-reumatoide/calculator.js",
+            "sha256": "427ee6e60a090985744bc000cd1ae0c651a3adcfa10c1c2b0389c7281408458b"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/criterios-acr-eular-artrite-reumatoide/calculator.js",
+            "sha256": "427ee6e60a090985744bc000cd1ae0c651a3adcfa10c1c2b0389c7281408458b"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/criterios-acr-eular-artrite-reumatoide/calculator.js",
+            "sha256": "427ee6e60a090985744bc000cd1ae0c651a3adcfa10c1c2b0389c7281408458b"
+          }
+        ],
+        "prospectiveSource27Replay": {
+          "file": "reports/review-20261003/source27-complete-bank-current-replay-root-r3.json",
+          "sha256": "44c601f27d3d5051a8d55a581381112b58df36c7c4b6cfd24ce1249b263d6a2b"
+        },
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "427ee6e60a090985744bc000cd1ae0c651a3adcfa10c1c2b0389c7281408458b"
+    },
+    "limits": "A classificação ACR/EULAR 2010 exige sinovite confirmada em pelo menos uma articulação e ausência de diagnóstico alternativo que a explique melhor, antes de aplicar o corte ≥6/10. Foi desenvolvida para o contexto de sinovite inflamatória indiferenciada de apresentação nova. O escore isolado, sem essas condições, não reproduz os critérios de classificação.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:02.778Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Resumo não mostra toda definição de articulações, testes sorológicos/limites ou exclusões; não é autorização de diagnóstico fora do contexto inicial."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/criterios-acr-eular-artrite-reumatoide/calculator.js",
+    "bytes": 5169,
+    "sha256": "427ee6e60a090985744bc000cd1ae0c651a3adcfa10c1c2b0389c7281408458b"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "e1ec18247b36d1d7da8cc9a44c8a9fbce480bdf63d0c7645cb2ab347bb8fdd58",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "96ea3cc8945d4694a1de2b09cc8365666b2de67dd4c8e54fc6f7a5576a344056",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "96ea3cc8945d4694a1de2b09cc8365666b2de67dd4c8e54fc6f7a5576a344056",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

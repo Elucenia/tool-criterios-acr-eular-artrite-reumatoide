@@ -1,0 +1,87 @@
+<!-- ELUCENIA technical documentation · criterios-acr-eular-artrite-reumatoide · ja · no clinical/professional/rights approval -->
+
+# 関節リウマチのACR/EULAR 2010分類基準
+
+[条件・出典・許諾](https://elucenia.org/ja/tools/criterios-acr-eular-artrite-reumatoide)
+
+## 使い方
+
+ポータルでツールを使用するか、ローカルHTTPサーバー経由でindex.htmlを開いてください。言語を選択し、項目を入力して計算してください。
+
+## 入力項目と単位
+
+### 関節所見（腫脹または痛み）
+
+`artic`
+
+- `0` — 大関節1か所
+- `1` — 大関節2～10か所
+- `2` — 小関節1～3か所（大関節病変の有無を問わない）
+- `3` — 小関節4～10か所（大関節病変の有無を問わない）
+- `5` — \> 10か所の関節（小関節を少なくとも1か所含む）
+
+### 血清学的検査（リウマトイド因子・抗CCP抗体）
+
+`soro`
+
+- `0` — 両方陰性
+- `2` — いずれかが低力価陽性（基準値上限の3×まで）
+- `3` — いずれかが高力価陽性（基準値上限の \> 3×）
+
+### 急性期反応（CRP・ESR）
+
+`fase`
+
+- `0` — 両方正常
+- `1` — CRPまたはESR異常
+
+### 症状の持続期間
+
+`duracao`
+
+- `0` — \< 6 週
+- `1` — ≥ 6 週
+
+## 方法の版
+
+ACR/EULAR 2010：4領域、合計0～10、閾値≥6；適用条件・除外条件を要確認
+
+## 記載された計算式
+
+4領域の合計（最高10点）：関節0～5、血清学0～3、急性期反応物0～1、症状期間0～1。≥6で確定関節リウマチ。
+
+大関節：肩、肘、股、膝、足関節。小関節：MCP、PIP、第2～5MTP、母指IP、手関節。
+
+## 限界・対象集団
+
+ACR/EULAR 2010の分類では、≥6/10の閾値を適用する前に、少なくとも一つの関節で滑膜炎を確認し、それをより適切に説明する別の診断がないことを確認する必要があります。この基準は、新たに発症した未分化の炎症性滑膜炎を対象に開発されました。これらの条件なしにスコアだけを用いても、分類基準を再現したことにはなりません。
+
+## 参考文献
+
+- [Aletaha D et al. 2010 Rheumatoid arthritis classification criteria: an American College of Rheumatology/European League Against Rheumatism collaborative initiative. Arthritis Rheum, 2010.](https://doi.org/10.1002/art.27584)
+
+## 技術テストの再現
+
+このリポジトリのルートディレクトリでnode test.cjsを実行すると、記録された合成ケースを再実行できます。元の入力、期待結果、許容誤差は保持されています。技術テストは臨床的検証を意味しません。
+
+```sh
+node test.cjs
+```
+
+tool.jsonには出典、版、確認範囲が記録されています。examples.jsonには合成入力と期待結果が保持され、results.jsonには実際に得られた結果が記録されています。
+
+[記録・参考文献](../tool.json) · [JavaScriptコード](../calculator.js) · [参照ケース](../examples.json) · [results.json](../results.json)
+
+## 確認状況と使用条件
+
+独立した臨床レビューは実施されていません。
+
+このインターフェースは独自に作成した翻訳であり、公式版や認証済みの版ではありません。独立した臨床レビュー、専門家による言語レビュー、評価尺度等の権利許諾の確認は実施されていません。
+
+式または分類の結果です。解釈、対応、適用可能性は専門家による評価と選択した出典に依存します。
+
+## ライセンスと帰属表示
+
+Apache-2.0はELUCENIAのコードにのみ適用されます。評価尺度等、出版物、翻訳、データの権利は、それぞれの権利者に帰属します。LICENSEとNOTICEを保持してください。
+
+ELUCENIA · Felipe Guedes · Copyright © 2026
