@@ -85,3 +85,24 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Classifies as definite rheumatoid arthritis (≥ 6 points)
+
+
+### 2
+
+Classifies as definite rheumatoid arthritis (≥ 6 points)
+
+
+### 3
+
+Does not meet the classification criteria (< 6 points)
+
+Does not exclude rheumatoid arthritis: reassess over time.
+

@@ -1,0 +1,437 @@
+{
+  "id": "criterios-acr-eular-artrite-reumatoide",
+  "implementationVersion": "criterios-acr-eular-artrite-reumatoide@native-2026-10-05+0b5cf05f480a",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "6 pequenas articulações, anti-CCP alto, PCR alta, 3 meses: 8 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Classifica como artrite reumatoide definida (≥ 6 pontos)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "12 articulações, sorologia negativa, PCR alta, 4 semanas: 6 pontos (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Classifica como artrite reumatoide definida (≥ 6 pontos)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "2 pequenas articulações, FR baixo, provas normais, 2 meses: 5 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Não preenche os critérios de classificação (< 6 pontos)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Não exclui artrite reumatoide: reavalie ao longo do tempo.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "6 pequenas articulações, anti-CCP alto, PCR alta, 3 meses: 8 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Classifies as definite rheumatoid arthritis (≥ 6 points)",
+            "locale": "en",
+            "template": "documented-authored-a514b8194bef654b7817"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "12 articulações, sorologia negativa, PCR alta, 4 semanas: 6 pontos (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Classifies as definite rheumatoid arthritis (≥ 6 points)",
+            "locale": "en",
+            "template": "documented-authored-a514b8194bef654b7817"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "2 pequenas articulações, FR baixo, provas normais, 2 meses: 5 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Does not meet the classification criteria (< 6 points)",
+            "locale": "en",
+            "template": "documented-authored-e9d49f6b5587de6f6e37"
+          },
+          "note": {
+            "text": "Does not exclude rheumatoid arthritis: reassess over time.",
+            "locale": "en",
+            "template": "documented-authored-67978a5cb78fa940b753"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "6 pequenas articulações, anti-CCP alto, PCR alta, 3 meses: 8 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Clasifica como artritis reumatoide definida (≥ 6 puntos)",
+            "locale": "es",
+            "template": "documented-authored-a514b8194bef654b7817"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "12 articulações, sorologia negativa, PCR alta, 4 semanas: 6 pontos (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Clasifica como artritis reumatoide definida (≥ 6 puntos)",
+            "locale": "es",
+            "template": "documented-authored-a514b8194bef654b7817"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "2 pequenas articulações, FR baixo, provas normais, 2 meses: 5 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "No cumple los criterios de clasificación (< 6 puntos)",
+            "locale": "es",
+            "template": "documented-authored-e9d49f6b5587de6f6e37"
+          },
+          "note": {
+            "text": "No excluye la artritis reumatoide: reevaluar con el tiempo.",
+            "locale": "es",
+            "template": "documented-authored-67978a5cb78fa940b753"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "6 pequenas articulações, anti-CCP alto, PCR alta, 3 meses: 8 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Classe comme polyarthrite rhumatoïde définie (≥ 6 points)",
+            "locale": "fr",
+            "template": "documented-authored-a514b8194bef654b7817"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "12 articulações, sorologia negativa, PCR alta, 4 semanas: 6 pontos (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Classe comme polyarthrite rhumatoïde définie (≥ 6 points)",
+            "locale": "fr",
+            "template": "documented-authored-a514b8194bef654b7817"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "2 pequenas articulações, FR baixo, provas normais, 2 meses: 5 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Ne remplit pas les critères de classification (< 6 points)",
+            "locale": "fr",
+            "template": "documented-authored-e9d49f6b5587de6f6e37"
+          },
+          "note": {
+            "text": "N’exclut pas la polyarthrite rhumatoïde : réévaluer au fil du temps.",
+            "locale": "fr",
+            "template": "documented-authored-67978a5cb78fa940b753"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "6 pequenas articulações, anti-CCP alto, PCR alta, 3 meses: 8 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Klassifiziert als gesicherte rheumatoide Arthritis (≥ 6 Punkte)",
+            "locale": "de",
+            "template": "documented-authored-a514b8194bef654b7817"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "12 articulações, sorologia negativa, PCR alta, 4 semanas: 6 pontos (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Klassifiziert als gesicherte rheumatoide Arthritis (≥ 6 Punkte)",
+            "locale": "de",
+            "template": "documented-authored-a514b8194bef654b7817"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "2 pequenas articulações, FR baixo, provas normais, 2 meses: 5 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Erfüllt die Klassifikationskriterien nicht (< 6 Punkte)",
+            "locale": "de",
+            "template": "documented-authored-e9d49f6b5587de6f6e37"
+          },
+          "note": {
+            "text": "Schließt eine rheumatoide Arthritis nicht aus: im Verlauf erneut beurteilen.",
+            "locale": "de",
+            "template": "documented-authored-67978a5cb78fa940b753"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "6 pequenas articulações, anti-CCP alto, PCR alta, 3 meses: 8 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Classifica come artrite reumatoide definita (≥ 6 punti)",
+            "locale": "it",
+            "template": "documented-authored-a514b8194bef654b7817"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "12 articulações, sorologia negativa, PCR alta, 4 semanas: 6 pontos (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Classifica come artrite reumatoide definita (≥ 6 punti)",
+            "locale": "it",
+            "template": "documented-authored-a514b8194bef654b7817"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "2 pequenas articulações, FR baixo, provas normais, 2 meses: 5 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Non soddisfa i criteri di classificazione (< 6 punti)",
+            "locale": "it",
+            "template": "documented-authored-e9d49f6b5587de6f6e37"
+          },
+          "note": {
+            "text": "Non esclude l’artrite reumatoide: rivalutare nel tempo.",
+            "locale": "it",
+            "template": "documented-authored-67978a5cb78fa940b753"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "6 pequenas articulações, anti-CCP alto, PCR alta, 3 meses: 8 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "يصنّفها على أنها التهاب مفاصل روماتويدي مؤكّد (≥ 6 نقاط)",
+            "locale": "ar",
+            "template": "documented-authored-a514b8194bef654b7817"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "12 articulações, sorologia negativa, PCR alta, 4 semanas: 6 pontos (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "يصنّفها على أنها التهاب مفاصل روماتويدي مؤكّد (≥ 6 نقاط)",
+            "locale": "ar",
+            "template": "documented-authored-a514b8194bef654b7817"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "2 pequenas articulações, FR baixo, provas normais, 2 meses: 5 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "لا يستوفي معايير التصنيف (< 6 نقاط)",
+            "locale": "ar",
+            "template": "documented-authored-e9d49f6b5587de6f6e37"
+          },
+          "note": {
+            "text": "لا يستبعد التهاب المفاصل الروماتويدي: أعد التقييم مع مرور الوقت.",
+            "locale": "ar",
+            "template": "documented-authored-67978a5cb78fa940b753"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "6 pequenas articulações, anti-CCP alto, PCR alta, 3 meses: 8 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "归类为确诊类风湿关节炎（≥ 6 分）",
+            "locale": "zh",
+            "template": "documented-authored-a514b8194bef654b7817"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "12 articulações, sorologia negativa, PCR alta, 4 semanas: 6 pontos (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "归类为确诊类风湿关节炎（≥ 6 分）",
+            "locale": "zh",
+            "template": "documented-authored-a514b8194bef654b7817"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "2 pequenas articulações, FR baixo, provas normais, 2 meses: 5 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "不符合分类标准（< 6 分）",
+            "locale": "zh",
+            "template": "documented-authored-e9d49f6b5587de6f6e37"
+          },
+          "note": {
+            "text": "不排除类风湿关节炎：随时间重新评估。",
+            "locale": "zh",
+            "template": "documented-authored-67978a5cb78fa940b753"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "6 pequenas articulações, anti-CCP alto, PCR alta, 3 meses: 8 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "確定リウマチ性関節炎（≥ 6 点）に分類する",
+            "locale": "ja",
+            "template": "documented-authored-a514b8194bef654b7817"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "12 articulações, sorologia negativa, PCR alta, 4 semanas: 6 pontos (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "確定リウマチ性関節炎（≥ 6 点）に分類する",
+            "locale": "ja",
+            "template": "documented-authored-a514b8194bef654b7817"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "2 pequenas articulações, FR baixo, provas normais, 2 meses: 5 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "分類基準を満たさない（< 6 点）",
+            "locale": "ja",
+            "template": "documented-authored-e9d49f6b5587de6f6e37"
+          },
+          "note": {
+            "text": "関節リウマチを除外しない：経時的に再評価する。",
+            "locale": "ja",
+            "template": "documented-authored-67978a5cb78fa940b753"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "6 pequenas articulações, anti-CCP alto, PCR alta, 3 meses: 8 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "निश्चित रूमेटॉइड आर्थराइटिस (≥ 6 अंक) के रूप में वर्गीकृत करता है",
+            "locale": "hi",
+            "template": "documented-authored-a514b8194bef654b7817"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "12 articulações, sorologia negativa, PCR alta, 4 semanas: 6 pontos (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "निश्चित रूमेटॉइड आर्थराइटिस (≥ 6 अंक) के रूप में वर्गीकृत करता है",
+            "locale": "hi",
+            "template": "documented-authored-a514b8194bef654b7817"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "2 pequenas articulações, FR baixo, provas normais, 2 meses: 5 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "वर्गीकरण मानदंडों को पूरा नहीं करता (< 6 अंक)",
+            "locale": "hi",
+            "template": "documented-authored-e9d49f6b5587de6f6e37"
+          },
+          "note": {
+            "text": "रूमेटॉइड आर्थराइटिस को बाहर नहीं करता: समय के साथ पुनर्मूल्यांकन करें।",
+            "locale": "hi",
+            "template": "documented-authored-67978a5cb78fa940b753"
+          },
+          "level": "low"
+        }
+      }
+    ]
+  }
+}

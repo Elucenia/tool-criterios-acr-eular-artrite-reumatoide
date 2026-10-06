@@ -85,3 +85,24 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Classe comme polyarthrite rhumatoïde définie (≥ 6 points)
+
+
+### 2
+
+Classe comme polyarthrite rhumatoïde définie (≥ 6 points)
+
+
+### 3
+
+Ne remplit pas les critères de classification (< 6 points)
+
+N’exclut pas la polyarthrite rhumatoïde : réévaluer au fil du temps.
+

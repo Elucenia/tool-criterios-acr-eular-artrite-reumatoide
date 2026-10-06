@@ -85,3 +85,24 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Classifica como artrite reumatoide definida (≥ 6 pontos)
+
+
+### 2
+
+Classifica como artrite reumatoide definida (≥ 6 pontos)
+
+
+### 3
+
+Não preenche os critérios de classificação (< 6 pontos)
+
+Não exclui artrite reumatoide: reavalie ao longo do tempo.
+

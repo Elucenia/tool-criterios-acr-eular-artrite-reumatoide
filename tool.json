@@ -276,7 +276,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "ACR/EULAR 2010:4 domínios, total 0–10, corte≥6; requer contexto e exclusões",
-    "implementationVersion": "criterios-acr-eular-artrite-reumatoide@native-2026-10-03+427ee6e60a09",
+    "implementationVersion": "criterios-acr-eular-artrite-reumatoide@native-2026-10-05+0b5cf05f480a",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/20872595/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -521,7 +521,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "427ee6e60a090985744bc000cd1ae0c651a3adcfa10c1c2b0389c7281408458b"
+      "implementationHash": "0b5cf05f480aef178956d13c8e7023b3d31ea20819666de68474d6b3940fddb5",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "criterios-acr-eular-artrite-reumatoide@native-2026-10-03+427ee6e60a09",
+          "previousImplementationHash": "427ee6e60a090985744bc000cd1ae0c651a3adcfa10c1c2b0389c7281408458b",
+          "implementationHash": "0b5cf05f480aef178956d13c8e7023b3d31ea20819666de68474d6b3940fddb5",
+          "scientificBodySha256": "e85276683115c11c8a08c490b617391606f7137a1aaae50779ecc2e6796ea25d",
+          "metadataContractHash": "a0f8d61e5f2644f5f7238f2650f773ff272abb8df696465a85fa90a39db22eee",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "A classificação ACR/EULAR 2010 exige sinovite confirmada em pelo menos uma articulação e ausência de diagnóstico alternativo que a explique melhor, antes de aplicar o corte ≥6/10. Foi desenvolvida para o contexto de sinovite inflamatória indiferenciada de apresentação nova. O escore isolado, sem essas condições, não reproduz os critérios de classificação.",
     "sourceLimitEvidence": {
@@ -540,20 +568,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/criterios-acr-eular-artrite-reumatoide/calculator.js",
-    "bytes": 5169,
-    "sha256": "427ee6e60a090985744bc000cd1ae0c651a3adcfa10c1c2b0389c7281408458b"
+    "bytes": 5374,
+    "sha256": "0b5cf05f480aef178956d13c8e7023b3d31ea20819666de68474d6b3940fddb5"
   },
-  "sourceToolSha256": "e1ec18247b36d1d7da8cc9a44c8a9fbce480bdf63d0c7645cb2ab347bb8fdd58",
+  "sourceToolSha256": "cbdfbb99d131159bd2a72fb3bbe1fdf1374a8b1bbd2b877a5bb2c44b22cae419",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "96ea3cc8945d4694a1de2b09cc8365666b2de67dd4c8e54fc6f7a5576a344056",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "96ea3cc8945d4694a1de2b09cc8365666b2de67dd4c8e54fc6f7a5576a344056",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

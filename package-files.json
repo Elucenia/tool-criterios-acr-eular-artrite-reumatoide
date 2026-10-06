@@ -1,6 +1,6 @@
 {
   "id": "criterios-acr-eular-artrite-reumatoide",
-  "scope": "Exclusive report-owned R6-HTTP-linked candidate, read-only default test",
+  "scope": "Immutable package integrity; tests write no files",
   "files": [
     {
       "path": ".gitattributes",
@@ -24,8 +24,8 @@
     },
     {
       "path": "calculator.browser.js",
-      "bytes": 5169,
-      "sha256": "427ee6e60a090985744bc000cd1ae0c651a3adcfa10c1c2b0389c7281408458b"
+      "bytes": 5374,
+      "sha256": "0b5cf05f480aef178956d13c8e7023b3d31ea20819666de68474d6b3940fddb5"
     },
     {
       "path": "calculator.js",
@@ -39,8 +39,8 @@
     },
     {
       "path": "CODE-COMPONENTS.md",
-      "bytes": 1141,
-      "sha256": "2d80b237b241e7f0c21886008a9c7278a8037d2ba4b9198a4402cd34e6ecf2be"
+      "bytes": 1410,
+      "sha256": "e814933a3a96850b265a46e6d40b78b7efcb37b0d164b55ed3cf28563044dc58"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -49,68 +49,78 @@
     },
     {
       "path": "demo-runtime.js",
-      "bytes": 11656,
-      "sha256": "734da1ceff19b961423e1bb5d2c9eaafd18920b32cc4f331856f6065c9cfd2c9"
+      "bytes": 14286,
+      "sha256": "187cb0a3f2693707660f7fc69fc63ce5e30055a5ccdc621cc7945a0d3b1d2918"
     },
     {
       "path": "documentation/ar.md",
-      "bytes": 4919,
-      "sha256": "1563dafd196fc4623e389d21209ff88e1c1b689e199d4dee3bb91d40da6eda87"
+      "bytes": 5540,
+      "sha256": "a88a5eceb1ed4f3781df87fd9097c723dfb1f1e0b6a25dc179c7a7e202d97f14"
     },
     {
       "path": "documentation/de.md",
-      "bytes": 3805,
-      "sha256": "c93ff427d819e3be49aca63bc5542ab7f9275f40d5f0ec7f470352c6956f9f2f"
+      "bytes": 4273,
+      "sha256": "c9418b048c39ec25b065fdf3cfa3db77a5597d30ec6fd6d80e1c24f0dea771da"
     },
     {
       "path": "documentation/en.md",
-      "bytes": 3410,
-      "sha256": "9a59ea9615c04b3f8066338f05b4252652ca1dcffaf5f6cd5819e91f00ecb5c2"
+      "bytes": 3825,
+      "sha256": "8d515f15985d70cd70988b54b74441e1e3143b0a77b1942f083000a73fd0e682"
     },
     {
       "path": "documentation/es.md",
-      "bytes": 3766,
-      "sha256": "b1d758b0abf14b9770fab928d85255655c03e87b4f87ae96d8713caf4a273677"
+      "bytes": 4196,
+      "sha256": "ec2ffd5e1a98acc6df661ab16e3292d8e7250f62d58c6c220b91fcb530e2050e"
     },
     {
       "path": "documentation/fr.md",
-      "bytes": 3951,
-      "sha256": "c9d6f913a8c7c83f8136684efd056e43778af9a0016840f84a5f42f6b46b6cf8"
+      "bytes": 4428,
+      "sha256": "a1f23445d9a1cfcece24d23d28fb823e85a97b0a532dd87cbf0a3d3653e5e885"
     },
     {
       "path": "documentation/hi.md",
-      "bytes": 6561,
-      "sha256": "da7f97a43cf9e487b958efd890118859cea4929467828359da70c3e0a4fd0553"
+      "bytes": 7592,
+      "sha256": "51d0b4f387005b30bb24222cfdc73ca01623e453f218ad635774abd6edae3842"
     },
     {
       "path": "documentation/it.md",
-      "bytes": 3729,
-      "sha256": "c09abea08bdcd462ad018029e70279d9baeda619e7f51b9a48f712846319001d"
+      "bytes": 4148,
+      "sha256": "8196bad93ad786c4c8e88a672c4155b405b3683ae084ad41de9a127a51bf7ae8"
     },
     {
       "path": "documentation/ja.md",
-      "bytes": 3920,
-      "sha256": "3502dd2b538cc5d247154bc2f498b87cad7b02507464f6e5c818dc05ae84b74b"
+      "bytes": 4365,
+      "sha256": "3bc03f80b7154efc045b4a82775d161da469414feb31f89bf57aa0218dedceef"
     },
     {
       "path": "documentation/pt-BR.md",
-      "bytes": 3665,
-      "sha256": "9a990d548f4b2029e7e1f022f2652437aaa195b89fd8bc5425a051948fc08c3a"
+      "bytes": 4094,
+      "sha256": "52fd3fa4f0cc9b5786e4ea8ea167317d616fd81b602e3a6d4b45608987db6266"
     },
     {
       "path": "documentation/zh.md",
-      "bytes": 3145,
-      "sha256": "90526751fd075beb123d8dc0655812ec051d67d4aad272afc74fa715e8f1228e"
+      "bytes": 3473,
+      "sha256": "bf7779399e9e55d2241e1c9e9f42f8292b4948f1c73b9826733b55f4c4e7bcbb"
+    },
+    {
+      "path": "documented-result-examples.json",
+      "bytes": 15020,
+      "sha256": "becf563385dd5d996313085725124199594b33bb7a3c3ef61d1e2fc88ddbca7a"
     },
     {
       "path": "engine/tool-code/criterios-acr-eular-artrite-reumatoide/calculator.js",
-      "bytes": 5169,
-      "sha256": "427ee6e60a090985744bc000cd1ae0c651a3adcfa10c1c2b0389c7281408458b"
+      "bytes": 5374,
+      "sha256": "0b5cf05f480aef178956d13c8e7023b3d31ea20819666de68474d6b3940fddb5"
     },
     {
       "path": "evidence/publication-base-reference.json",
       "bytes": 2854,
       "sha256": "1c627cf889b94f6df3dd11277ba1bca73e20b1f3902d0c84ec39020e9dd7633b"
+    },
+    {
+      "path": "evidence/publication-provenance-before-output-contract.json",
+      "bytes": 11963,
+      "sha256": "5dcbec4b06e29e2cef0ddf6476328ce59a632995c0bceeb3ad9952d2dcdbaf76"
     },
     {
       "path": "evidence/served-http-r6.json",
@@ -134,8 +144,8 @@
     },
     {
       "path": "localization.js",
-      "bytes": 48248,
-      "sha256": "4c7a0b0928c83bf927691a5528b800a2078038f9996b1f330ce0c8b9362b209b"
+      "bytes": 56217,
+      "sha256": "31bf8e6946e19a99deab6dd43022c90678e6c463af9e7a3eb7510d1d86a69746"
     },
     {
       "path": "METHOD-CODE-LICENSE.txt",
@@ -154,23 +164,23 @@
     },
     {
       "path": "package.json",
-      "bytes": 419,
-      "sha256": "812196ff9d4389aad3c2a048468fdfee756f3d9b44350200934ffac17214b812"
+      "bytes": 513,
+      "sha256": "52e72b034b2e25095afc7f393253802cc283cb66be1627573cc25f821e4e433d"
     },
     {
       "path": "portal-formatters.browser.js",
-      "bytes": 31300,
-      "sha256": "d8522ffe0b858012dfd25e5e8d10fe2eefec977f2bdb612be5cbadf5c4bed9f3"
+      "bytes": 38687,
+      "sha256": "cf0668f6fd44a80a3e4064915cf2da02d2203a9596bd39a9a0a6025fb12e17f4"
     },
     {
       "path": "publication-provenance.json",
-      "bytes": 11963,
-      "sha256": "5dcbec4b06e29e2cef0ddf6476328ce59a632995c0bceeb3ad9952d2dcdbaf76"
+      "bytes": 6449,
+      "sha256": "c2da7a5599bd751b5bbe1bc84daf91671a8d5fdbcb096f2b5e27a526d3dbd71e"
     },
     {
       "path": "README.md",
-      "bytes": 3352,
-      "sha256": "9619931e688110672198574a783dac3b99fb3b967a3805d0845fef714787c74f"
+      "bytes": 3956,
+      "sha256": "35d0c409e6c2d6ba5183a5241461898bf452e848e5ae2dd0db08f518a0ce12d4"
     },
     {
       "path": "rejections.json",
@@ -188,9 +198,24 @@
       "sha256": "3c20d46e436116be0c673f0260b24bbc2193fafbd15fb4659bf0e545b452487e"
     },
     {
+      "path": "source-result-contract.json",
+      "bytes": 4743,
+      "sha256": "f0ae7622cdc32318ba895a5e74563d196e5251e74fac48c270ebb155f7588387"
+    },
+    {
       "path": "SOURCE-RIGHTS-REVIEW.md",
       "bytes": 1591,
       "sha256": "9239aec1e37a6e1d2a90eb605c12f140e26af4201181940a8d5d4d75e22ac91a"
+    },
+    {
+      "path": "test-presentation-contract.cjs",
+      "bytes": 1923,
+      "sha256": "a4a1734ea3d00c17ffeed7abbd605663459b7c190b695d2396cc58da93215cec"
+    },
+    {
+      "path": "test-source-result-contract.cjs",
+      "bytes": 1416,
+      "sha256": "cbadaf0576ecc2884c7523902880d2068e3a9b6b63df418359ab42219af2e386"
     },
     {
       "path": "test.cjs",
@@ -199,8 +224,8 @@
     },
     {
       "path": "tool.json",
-      "bytes": 30477,
-      "sha256": "7bfff2551a747f08c73b5c87cb90dcf394c904888f9750e8d637cd260e36d908"
+      "bytes": 31996,
+      "sha256": "58b8162be4da6c60d09f0dc59b385a2c6592cb59944c6427c3074e58acd1fcf2"
     }
   ]
 }
